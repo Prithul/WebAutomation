@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="71.0"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+
+    <test name = "Amazon Home">
+        <classes>
+            <class name="pageModelObject.TestAmazonPrime"/>
+            <class name="pageModelObject.TestHome"/>
+            <class name="dataDriven.TestSearchPageBySql"/>
+            <class name="dataDriven.TestSearchByExcel"/>
+            <class name="dataDriven.TestSearchByGoogleSheet"/>
+            <class name="pageModelObject.TestSearchOnSearchBox"/>
+            <class name="pageModelObject.TestSignInSignOut"/>
+            <class name="pageModelObject.TestDropDown"/>
+            <class name="pageModelObject.TestNavigation"/>
+            <class name="pageModelObject.TestHomePage"/>
+            <class name="testNavPages.TestYourAmazon"/>
+            <class name="testNavPages.TestTodayDeal"/>
+            <class name="testNavPages.TestGiftCards"/>
+            <class name="testNavPages.TestWholeFoods"/>
+            <class name="testNavPages.TestRigistry"/>
+            <class name="testNavPages.TestSell"/>
+            <class name="testNavPages.TestHelp"/>
+            <class name="pageModelObject.TestURL"/>
+            <class name="pageModelObject.TestPageTitle"/>
+            <class name="pageModelObject.TestAllLinks"/>
+            <class name="pageModelObject.TestShopByCategory"/>
+            <class name="pageModelObject.TestRadioButton"/>
+            <class name="pageModelObject.TestBrokenLinks"/>
+            <class name="pageModelObject.TestBrokenImages"/>
+            <class name="pageModelObject.TestArrowKeys"/>
+            <class name="pageModelObject.TestCheckBox"/>
+            <class name="pageModelObject.TestLogoAndVideo"/>
+            <class name="pageModelObject.TestMouseHoverAction"/>
+            <class name="pageModelObject.TestHiddenButton"/>
+            <class name="pageModelObject.TestDeliverTo"/>
+            <class name="pageModelObject.TestReviewCheckByStar"/>
+            <class name="pageModelObject.TestIFrame"/>
+            <class name="keywordDriven.TestSISO"/>
+       </classes>
+   </test>
+</suite>
+
+
